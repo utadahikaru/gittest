@@ -37,6 +37,6 @@ body{
 
 }
 #button{
-    float: 
-    
-}
+    float: left;
+    background-image:"button1.png";
+    }
