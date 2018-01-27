@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="" />
+    <link rel="stylesheet" type="text/css" href="registercss.css">
+
+</head>
+
+<body>
+    <h6 id="headd">Create Your Account</h6>
+    <div class="div1">
+        <form>
+            Username:<br>
+            <input type="text" id="username">
+            <br>
+            Password:<br>
+            <input type="password" id="password1">
+            
+            <br>
+            Password Again:<br>
+            <input type="password" id="password2">
+            <br>
+            Email Adreess:<br>
+            <input type="text" id="email">
+        </form>
+    </div>
+
+
+    <script>
+        var scale = 1 / window.devicePixelRatio;
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+    </script>
+</body>
+
+</html>

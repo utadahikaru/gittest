@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+.div1{
+    margin-top: 30px;
+    color: white;
+    font-size: 50px;
+}
+#headd{
+    color: white;
+    margin-top: 20px;
+}
+#username{
+    width: 80%;
+    height: 50px;
+}
+#password1{
+    width: 80%;
+    height: 50px;
+}
+#password2{
+    width: 80%;
+    height: 50px;
+}
+#email{
+    width: 80%;
+    height: 50px;
+}

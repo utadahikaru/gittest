@@ -10,9 +10,13 @@
 
 <body>
     <div class="menu">
-        <button type="button">
-            menu
-        </button>
+        <br>
+    </div>
+    <input type="image" id="button" src="button1.png" width="80px" height="25px" border="0" onclick="showlist()">
+    <div id="register">
+        <a href="register.html">Register&nbsp&nbsp&nbsp</a>
+        <a href="http://www.google.com/">Google&nbsp&nbsp&nbsp</a>
+        <a href="http://www.twitter.com/">About Us</a>
     </div>
     <div class="twitter">
         <img src="timg.jpg" align="middle">
@@ -44,6 +48,16 @@
         document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
 
         document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+        function showlist(){
+            if(document.getElementById("register").style.display == "none")
+            {
+                document.getElementById("register").style.display = "inline-block";
+            }
+            else{
+                document.getElementById("register").style.display = "none" ;
+            }
+            
+        }
     </script>
 </body>
 
