@@ -3,7 +3,7 @@ body{
 }
 .twitter{
     text-align: center;
-    margin-top: 160px;
+    margin-top: 0px;
 
 }
 .form{
@@ -33,10 +33,37 @@ body{
     font-size: 20px;
 }
 .menu{
-    background-color: blueviolet;
-
+    background-color: aqua;
+    margin-bottom: 0px;
+    padding: 0px;
+    border:0px;
+    width: 100%;
 }
 #button{
     float: left;
-    background-image:"button1.png";
+    position: absolute;
+    top: 48px;
+    left: 20px;
     }
+    #register{
+    display: none;
+    width: 100%;
+    font-size: 50px;
+    margin-top: 0px;
+    float: left;
+    background-color: blueviolet;
+}
+a:link{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+   color: white;
+   text-decoration: none;
+}
+a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+a:visited{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
