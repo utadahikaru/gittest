@@ -26,9 +26,9 @@
             Email Adreess:<br>
             <input type="text" id="email">
             <br>
-            <input type="submit" id="submit" value="OK" onclick="confirm()">
+            <input type="button" id="submit" value="OK" onclick="confirm()">
             <br>
-            <p id="hint">asdcd</p>
+            <p id="hint"></p>
         </form>
     </div>
 </body>
@@ -48,8 +48,12 @@
                 }
             }
         var hint1 = document.getElementById("hint");
+        function test1() {
+            hint1.innerHTML="po0980980980898p"
+            
+        }
         function confirm() {
-            if (document.getElementById("password1").value != doucument.getElementById("password2").value) {
+            if (document.getElementById("password1").value != document.getElementById("password2").value) {
                 hint1.innerHTML="password inconsistent";
                 
             }
@@ -57,7 +61,7 @@
                 hint1.innerHTML="OK You have created an account";
             }
             else{
-                hint1.innerHTML="Email Adress incorrect";
+                hint1.innerHTML="Email Address incorrect";
             }
         }
     
