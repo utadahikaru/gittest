@@ -26,7 +26,9 @@
             Email Adreess:<br>
             <input type="text" id="email">
             <br>
-            <input type="submit" id="submit" value="OK">
+            <input type="submit" id="submit" value="OK" onclick="confirm()">
+            <br>
+            <p id="hint">asdcd</p>
         </form>
     </div>
 </body>
@@ -37,6 +39,31 @@
         var scale = 1 / window.devicePixelRatio;
         document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
         document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+        function testEmail(str) {
+                var reg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+                if (reg.test(str)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        var hint1 = document.getElementById("hint");
+        function confirm() {
+            if (document.getElementById("password1").value != doucument.getElementById("password2").value) {
+                hint1.innerHTML="password inconsistent";
+                
+            }
+            else if(testEmail(document.getElementById("email").value)){
+                hint1.innerHTML="OK You have created an account";
+            }
+            else{
+                hint1.innerHTML="Email Adress incorrect";
+            }
+        }
+    
+    
+    
+    
     </script>
 </body>
 

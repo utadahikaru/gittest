@@ -35,3 +35,8 @@ body{
     left:40%; 
     margin-top: 40px;
 }
+#hint{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
