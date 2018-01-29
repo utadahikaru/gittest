@@ -13,18 +13,22 @@ body{
 #username{
     width: 80%;
     height: 50px;
+    font-size: 40px;
 }
 #password1{
     width: 80%;
     height: 50px;
+    font-size:40px;
 }
 #password2{
     width: 80%;
     height: 50px;
+    font-size: 40px;
 }
 #email{
     width: 80%;
     height: 50px;
+    font-size: 40px;
 }
 #submit{
     color:blueviolet;
