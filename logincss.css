@@ -13,13 +13,13 @@ body{
     margin-top: 100px;
 }
 #username{
-    width: 500px;
+    width: 70%;
     height: 50px;
     font-size: 40px;
 
 }
 #password{
-    width: 500px;
+    width: 70%;
     height:50px;
     font-size: 40px;
 }
